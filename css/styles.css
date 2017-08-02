@@ -1,0 +1,160 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#backdiv{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#backimg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#dashboard{
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    background-color: transparent;
+}
+.controlbtn{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    background: -webkit-linear-gradient(45deg, #081554 28%, #040414 51%);
+    color: white;
+    border-color: transparent;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px blue;
+}
+.controlbtn:hover{
+    background: -webkit-linear-gradient(45deg, #E60E20 10%, #520E10 57%);
+    box-shadow: 0px 0px 15px red;
+}
+#myflame{
+    position: absolute;
+    top: 49%;
+    left: 6%;
+}
+#flame{
+    width: 200px;
+    height: 300px;
+}
+#blackPices{
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    background-color: transparent;
+    height: 281px;
+    width: 250px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px white;
+}
+.b{
+    position: relative;
+    float: left;
+    text-align: center;
+    background-color: rgba(50,50,50,0.3);
+    width: 25%;
+    height: 70px;
+}
+#whitePices{
+    position: absolute;
+    top: 2%;
+    left: 78%;
+    background-color: transparent;
+    height: 281px;
+    width: 250px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px white;
+}
+.w{
+    position: relative;
+    position: relative;
+    float: left;
+    text-align: center;
+    background-color: rgba(50,50,50,0.3);
+    width: 25%;
+    height: 70px;
+}
+#board{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    margin: auto;
+    background-color: #3c3c3c;
+    height: 92%;
+    width: 46%;
+    padding: 1%;
+    box-shadow: 0px 0px 50px blue;
+}
+.black{
+    background-color: black;
+    height: 12.5%;
+    width: 12.5%;
+    borde:3px solid black;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 15px blue;
+}
+.white{
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(234, 114, 68, 1)10%, rgba(255, 192, 66, 0)80%);
+    height: 12.5%;
+    width: 12.5%;
+    borde:3px solid black;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 15px blue;
+}
+.pieces{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 55px;
+    width: 45px;
+}
+
+.changeBordBlack{
+    transform: rotateZ(180deg);
+    transition-duration: 0.9s;
+}
+.changePiecBlack{
+    transform: rotateX(180deg);
+    transition-duration: 0.5s;
+}
+.changeBordWhite{
+    transform: rotateX(0deg);
+    transition-duration: 0.9s;
+}
+.changePiecWhite{
+    transform: rotateX(0deg);
+    transition-duration: 0.5s;
+}
+.markParent{
+    background: -webkit-radial-gradient(center, ellipse cover, #EB8E15 10%, #292622 80%)!important;
+}
+.nextPos{
+    color: green;
+    background: -webkit-radial-gradient(center, ellipse cover, #15EB39 10%, #3D453D 80%)!important;
+}
+.attack{
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 0, 0, 1)43%, rgba(235, 220, 70, 0)100%);!important;
+}
+
+.aaaa{
+    position: relative;
+    height: 55px;
+    width: 45px;
+}
+
+.visibilitynon{
+    visibility: hidden;
+}
+.dashbordred{
+    background: -webkit-linear-gradient(45deg, #E60E20 10%, #520E10 57%);
+}

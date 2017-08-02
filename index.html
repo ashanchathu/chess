@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+    <div id="backdiv">
+        <img id="backimg" src="../images/back.jpg">
+    </div>
+    <div class="col-md-2 " id="dashboard">
+        <input class="navbar-btn controlbtn" type="button" value="Hide Dashboard" id="dashbtn">
+        <input class="navbar-btn controlbtn subcontl" type="button" value="Restart" id="restart">
+        <input class="navbar-btn controlbtn subcontl" type="button" value="Play Black Side" id="changeside">
+        <input class="navbar-btn controlbtn subcontl" type="button" value="Exit" id="exit">
+    </div>
+    <div id="myflame"><img id="flame" src="../images/myflame.gif"></div>
+    <div id="whitePices">
+        <div class="w" id="1white"></div>
+        <div class="w" id="2white"></div>
+        <div class="w" id="3white"></div>
+        <div class="w" id="4white"></div>
+        <div class="w" id="5white"></div>
+        <div class="w" id="6white"></div>
+        <div class="w" id="7white"></div>
+        <div class="w" id="8white"></div>
+        <div class="w" id="9white"></div>
+        <div class="w" id="10white"></div>
+        <div class="w" id="11white"></div>
+        <div class="w" id="12white"></div>
+        <div class="w" id="13white"></div>
+        <div class="w" id="14white"></div>
+        <div class="w" id="15white"></div>
+        <div class="w" id="16white"></div>
+    </div>
+    <div id="blackPices">
+        <div class="b" id="1black"></div>
+        <div class="b" id="2black"></div>
+        <div class="b" id="3black"></div>
+        <div class="b" id="4black"></div>
+        <div class="b" id="5black"></div>
+        <div class="b" id="6black"></div>
+        <div class="b" id="7black"></div>
+        <div class="b" id="8black"></div>
+        <div class="b" id="9black"></div>
+        <div class="b" id="10black"></div>
+        <div class="b" id="11black"></div>
+        <div class="b" id="12black"></div>
+        <div class="b" id="13black"></div>
+        <div class="b" id="14black"></div>
+        <div class="b" id="15black"></div>
+        <div class="b" id="16black"></div>
+    </div>
+    <div id="board" >
+        <div class="col-md-1 white" id="11pos1"><img class="pieces br" id="br1" src="../images/br1.png"></div>
+        <div class="col-md-1 black" id="12pos2"><img class="pieces bn" id="bn1" src="../images/bn1.png"></div>
+        <div class="col-md-1 white" id="13pos3"><img class="pieces bb" id="bb1" src="../images/bb1.png"></div>
+        <div class="col-md-1 black" id="14pos4"><img class="pieces bk" id="bk" src="../images/bk.png"></div>
+        <div class="col-md-1 white" id="15pos5"><img class="pieces bq" id="bq" src="../images/bq.png"></div>
+        <div class="col-md-1 black" id="16pos6"><img class="pieces bb" id="bb2" src="../images/bb2.png"></div>
+        <div class="col-md-1 white" id="17pos7"><img class="pieces bn" id="bn2" src="../images/bn2.png"></div>
+        <div class="col-md-1 black" id="18pos8"><img class="pieces br" id="br2" src="../images/br2.png"></div>
+
+        <div class="col-md-1 black" id="21pos9"><img class="pieces bp" id="bp1" src="../images/bp1.png"></div>
+        <div class="col-md-1 white" id="22pos10"><img class="pieces bp" id="bp2" src="../images/bp2.png"></div>
+        <div class="col-md-1 black" id="23pos11"><img class="pieces bp" id="bp3" src="../images/bp3.png"></div>
+        <div class="col-md-1 white" id="24pos12"><img class="pieces bp" id="bp4" src="../images/bp4.png"></div>
+        <div class="col-md-1 black" id="25pos13"><img class="pieces bp" id="bp5" src="../images/bp5.png"></div>
+        <div class="col-md-1 white" id="26pos14"><img class="pieces bp" id="bp6" src="../images/bp6.png"></div>
+        <div class="col-md-1 black" id="27pos15"><img class="pieces bp" id="bp7" src="../images/bp7.png"></div>
+        <div class="col-md-1 white" id="28pos16"><img class="pieces bp" id="bp8" src="../images/bp8.png"></div>
+
+
+        <div class="col-md-1 white" id="31pos17"></div>
+        <div class="col-md-1 black" id="32pos18"></div>
+        <div class="col-md-1 white" id="33pos19"></div>
+        <div class="col-md-1 black" id="34pos20"></div>
+        <div class="col-md-1 white" id="35pos21"></div>
+        <div class="col-md-1 black" id="36pos22"></div>
+        <div class="col-md-1 white" id="37pos23"></div>
+        <div class="col-md-1 black" id="38pos24"></div>
+
+        <div class="col-md-1 black" id="41pos25"></div>
+        <div class="col-md-1 white" id="42pos26"></div>
+        <div class="col-md-1 black" id="43pos27"></div>
+        <div class="col-md-1 white" id="44pos28"></div>
+        <div class="col-md-1 black" id="45pos29"></div>
+        <div class="col-md-1 white" id="46pos30"></div>
+        <div class="col-md-1 black" id="47pos31"></div>
+        <div class="col-md-1 white" id="48pos32"></div>
+
+
+        <div class="col-md-1 white" id="51pos33"></div>
+        <div class="col-md-1 black" id="52pos34"></div>
+        <div class="col-md-1 white" id="53pos35"></div>
+        <div class="col-md-1 black" id="54pos36"></div>
+        <div class="col-md-1 white" id="55pos37"></div>
+        <div class="col-md-1 black" id="56pos38"></div>
+        <div class="col-md-1 white" id="57pos39"></div>
+        <div class="col-md-1 black" id="58pos40"></div>
+
+        <div class="col-md-1 black" id="61pos41"></div>
+        <div class="col-md-1 white" id="62pos42"></div>
+        <div class="col-md-1 black" id="63pos43"></div>
+        <div class="col-md-1 white" id="64pos44"></div>
+        <div class="col-md-1 black" id="65pos45"></div>
+        <div class="col-md-1 white" id="66pos46"></div>
+        <div class="col-md-1 black" id="67pos47"></div>
+        <div class="col-md-1 white" id="68pos48"></div>
+
+
+        <div class="col-md-1 white" id="71pos49"><img class="pieces wp" id="wp1" src="../images/wp1.png"></div>
+        <div class="col-md-1 black" id="72pos50"><img class="pieces wp" id="wp2" src="../images/wp2.png"></div>
+        <div class="col-md-1 white" id="73pos51"><img class="pieces wp" id="wp3" src="../images/wp3.png"></div>
+        <div class="col-md-1 black" id="74pos52"><img class="pieces wp" id="wp4" src="../images/wp4.png"></div>
+        <div class="col-md-1 white" id="75pos53"><img class="pieces wp" id="wp5" src="../images/wp5.png"></div>
+        <div class="col-md-1 black" id="76pos54"><img class="pieces wp" id="wp6" src="../images/wp6.png"></div>
+        <div class="col-md-1 white" id="77pos55"><img class="pieces wp" id="wp7" src="../images/wp7.png"></div>
+        <div class="col-md-1 black" id="78pos56"><img class="pieces wp" id="wp8" src="../images/wp8.png"></div>
+
+        <div class="col-md-1 black" id="81pos57"><img class="pieces wr" id="wr1" src="../images/wr1.png"></div>
+        <div class="col-md-1 white" id="82pos58"><img class="pieces wn" id="wn1" src="../images/wn1.png"></div>
+        <div class="col-md-1 black" id="83pos59"><img class="pieces wb" id="wb1" src="../images/wb1.png"></div>
+        <div class="col-md-1 white" id="84pos60"><img class="pieces wk" id="wk" src="../images/wk.png"></div>
+        <div class="col-md-1 black" id="85pos61"><img class="pieces wq" id="wq" src="../images/wq.png"></div>
+        <div class="col-md-1 white" id="86pos62"><img class="pieces wb" id="wb2" src="../images/wb2.png"></div>
+        <div class="col-md-1 black" id="87pos63"><img class="pieces wn" id="wn2" src="../images/wn2.png"></div>
+        <div class="col-md-1 white" id="88pos64"><img class="pieces wr" id="wr2" src="../images/wr2.png"></div>
+    </div>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/dom.js"></script>
+</body>
+</html>
